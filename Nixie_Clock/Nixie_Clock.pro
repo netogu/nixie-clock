@@ -1,4 +1,4 @@
-update=Sunday, September 10, 2017 'AMt' 11:50:12 AM
+update=Sunday, September 10, 2017 'PMt' 04:09:56 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -56,5 +56,7 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
+LibName30=nixie_tubes
+LibName31=nixie_clock
 [general]
 version=1

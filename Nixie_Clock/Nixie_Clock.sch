@@ -28,11 +28,14 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:nixie_tubes
+LIBS:nixie_clock
+LIBS:Nixie_Clock-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -42,15 +45,40 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L SAML21E15B-M U?
-U 1 1 59B58923
-P 4500 3100
-F 0 "U?" H 2400 4500 50  0000 C CNN
-F 1 "SAML21E15B-M" H 6300 1700 50  0000 C CNN
-F 2 "Housings_DFN_QFN:QFN-32-1EP_5x5mm_Pitch0.5mm" H 4500 2100 50  0001 C CIN
-F 3 "" H 4500 3100 50  0000 C CNN
-	1    4500 3100
-	1    0    0    -1  
-$EndComp
+$Sheet
+S 4000 1500 1600 2800
+U 59B58CCA
+F0 "uController" 60
+F1 "nixie_clk_ucontroller.sch" 60
+$EndSheet
+$Sheet
+S 1300 1250 1600 1300
+U 59B58C72
+F0 "Power" 60
+F1 "nixie_clk_power.sch" 60
+$EndSheet
+$Sheet
+S 6050 1200 950  3100
+U 59B58C95
+F0 "Nixie Tubes" 60
+F1 "nixie_clk_tubes.sch" 60
+F2 "PP180V" I L 6050 1400 60 
+F3 "GK1" I L 6050 1650 60 
+F4 "GK2" I L 6050 1800 60 
+F5 "GK3" I L 6050 1950 60 
+F6 "GK4" I L 6050 2100 60 
+F7 "GK5" I L 6050 2250 60 
+F8 "GK6" I L 6050 2400 60 
+F9 "GK7" I L 6050 2550 60 
+F10 "GK8" I L 6050 2700 60 
+F11 "GK9" I L 6050 2850 60 
+F12 "GK0" I L 6050 3000 60 
+F13 "KC" I L 6050 3150 60 
+F14 "GA1" I L 6050 3400 60 
+F15 "GA2" I L 6050 3550 60 
+F16 "GA3" I L 6050 3700 60 
+F17 "GA4" I L 6050 3850 60 
+F18 "GA5" I L 6050 4000 60 
+F19 "GA6" I L 6050 4150 60 
+$EndSheet
 $EndSCHEMATC
