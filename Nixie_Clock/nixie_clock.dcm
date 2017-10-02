@@ -29,4 +29,9 @@ K N-Channel MOSFET
 F https://www.diodes.com/assets/Datasheets/ds30104.pdf
 $ENDCMP
 #
+$CMP Wurth_750312366
+D Transformer, split primary, single secondary
+K transformer coil magnet
+$ENDCMP
+#
 #End Doc Library
