@@ -30,6 +30,92 @@ LIBS:contrib
 LIBS:valves
 LIBS:nixie_tubes
 LIBS:nixie_clock
+LIBS:ac-dc
+LIBS:Altera
+LIBS:analog_devices
+LIBS:Battery_Management
+LIBS:bbd
+LIBS:Bosch
+LIBS:brooktre
+LIBS:Connector
+LIBS:dc-dc
+LIBS:Decawave
+LIBS:Diode
+LIBS:Display
+LIBS:driver_gate
+LIBS:DSP_Microchip_DSPIC33
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:Espressif
+LIBS:FPGA_Actel
+LIBS:ftdi
+LIBS:gennum
+LIBS:Graphic
+LIBS:hc11
+LIBS:infineon
+LIBS:intersil
+LIBS:ir
+LIBS:Lattice
+LIBS:LED
+LIBS:LEM
+LIBS:Logic_74xgxx
+LIBS:Logic_74xx
+LIBS:Logic_CMOS_4000
+LIBS:Logic_CMOS_IEEE
+LIBS:logic_programmable
+LIBS:Logic_TTL_IEEE
+LIBS:maxim
+LIBS:MCU_Microchip_PIC10
+LIBS:MCU_Microchip_PIC12
+LIBS:MCU_Microchip_PIC16
+LIBS:MCU_Microchip_PIC18
+LIBS:MCU_Microchip_PIC24
+LIBS:MCU_Microchip_PIC32
+LIBS:MCU_NXP_Kinetis
+LIBS:MCU_NXP_LPC
+LIBS:MCU_NXP_S08
+LIBS:MCU_Parallax
+LIBS:MCU_ST_STM8
+LIBS:MCU_ST_STM32
+LIBS:MCU_Texas_MSP430
+LIBS:Mechanical
+LIBS:modules
+LIBS:Motor
+LIBS:motor_drivers
+LIBS:nordicsemi
+LIBS:nxp
+LIBS:onsemi
+LIBS:Oscillators
+LIBS:Power_Management
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:Relay
+LIBS:RF_Bluetooth
+LIBS:rfcom
+LIBS:RFSolutions
+LIBS:Sensor_Current
+LIBS:Sensor_Humidity
+LIBS:sensors
+LIBS:silabs
+LIBS:supertex
+LIBS:Switch
+LIBS:Transformer
+LIBS:Transistor
+LIBS:triac_thyristor
+LIBS:Valve
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:xilinx-artix7
+LIBS:xilinx-kintex7
+LIBS:xilinx-spartan6
+LIBS:xilinx-virtex5
+LIBS:xilinx-virtex6
+LIBS:xilinx-virtex7
+LIBS:zetex
+LIBS:Zilog
 LIBS:Nixie_Clock-cache
 EELAYER 25 0
 EELAYER END
@@ -672,27 +758,7 @@ Wire Wire Line
 Wire Wire Line
 	11150 6000 11350 6000
 Wire Bus Line
-	11050 6700 11050 5700
-Wire Bus Line
-	11050 5700 11050 5600
-Wire Bus Line
-	11050 5600 11050 5500
-Wire Bus Line
-	11050 5500 11050 5400
-Wire Bus Line
-	11050 5400 11050 5300
-Wire Bus Line
-	11050 5300 11050 5200
-Wire Bus Line
-	11050 5200 11050 5100
-Wire Bus Line
-	11050 5100 11050 5000
-Wire Bus Line
-	11050 5000 11050 4900
-Wire Bus Line
-	11050 4900 11050 4800
-Wire Bus Line
-	11050 4800 11050 4300
+	11050 6700 11050 4300
 Wire Wire Line
 	11150 3050 11350 3050
 Wire Wire Line
@@ -718,27 +784,7 @@ Wire Wire Line
 Wire Wire Line
 	11150 4150 11350 4150
 Wire Bus Line
-	11050 2850 11050 2950
-Wire Bus Line
-	11050 2950 11050 3050
-Wire Bus Line
-	11050 3050 11050 3150
-Wire Bus Line
-	11050 3150 11050 3250
-Wire Bus Line
-	11050 3250 11050 3350
-Wire Bus Line
-	11050 3350 11050 3450
-Wire Bus Line
-	11050 3450 11050 3550
-Wire Bus Line
-	11050 3550 11050 3650
-Wire Bus Line
-	11050 3650 11050 3750
-Wire Bus Line
-	11050 3750 11050 3850
-Wire Bus Line
-	11050 3850 11050 4350
+	11050 2850 11050 4350
 Wire Wire Line
 	9050 4900 9250 4900
 Wire Wire Line
@@ -764,27 +810,7 @@ Wire Wire Line
 Wire Wire Line
 	9050 6000 9250 6000
 Wire Bus Line
-	8950 4350 8950 4800
-Wire Bus Line
-	8950 4800 8950 4900
-Wire Bus Line
-	8950 4900 8950 5000
-Wire Bus Line
-	8950 5000 8950 5100
-Wire Bus Line
-	8950 5100 8950 5200
-Wire Bus Line
-	8950 5200 8950 5300
-Wire Bus Line
-	8950 5300 8950 5400
-Wire Bus Line
-	8950 5400 8950 5500
-Wire Bus Line
-	8950 5500 8950 5600
-Wire Bus Line
-	8950 5600 8950 5700
-Wire Bus Line
-	8950 5700 8950 6700
+	8950 4350 8950 6700
 Wire Wire Line
 	9050 3100 9250 3100
 Wire Wire Line
@@ -810,27 +836,7 @@ Wire Wire Line
 Wire Wire Line
 	9050 4200 9250 4200
 Wire Bus Line
-	8950 2900 8950 3000
-Wire Bus Line
-	8950 3000 8950 3100
-Wire Bus Line
-	8950 3100 8950 3200
-Wire Bus Line
-	8950 3200 8950 3300
-Wire Bus Line
-	8950 3300 8950 3400
-Wire Bus Line
-	8950 3400 8950 3500
-Wire Bus Line
-	8950 3500 8950 3600
-Wire Bus Line
-	8950 3600 8950 3700
-Wire Bus Line
-	8950 3700 8950 3800
-Wire Bus Line
-	8950 3800 8950 3900
-Wire Bus Line
-	8950 3900 8950 4400
+	8950 2900 8950 4400
 Wire Wire Line
 	6950 4900 7150 4900
 Wire Wire Line
@@ -856,27 +862,7 @@ Wire Wire Line
 Wire Wire Line
 	6950 6000 7150 6000
 Wire Bus Line
-	6850 4350 6850 4800
-Wire Bus Line
-	6850 4800 6850 4900
-Wire Bus Line
-	6850 4900 6850 5000
-Wire Bus Line
-	6850 5000 6850 5100
-Wire Bus Line
-	6850 5100 6850 5200
-Wire Bus Line
-	6850 5200 6850 5300
-Wire Bus Line
-	6850 5300 6850 5400
-Wire Bus Line
-	6850 5400 6850 5500
-Wire Bus Line
-	6850 5500 6850 5600
-Wire Bus Line
-	6850 5600 6850 5700
-Wire Bus Line
-	6850 5700 6850 6700
+	6850 4350 6850 6700
 Wire Wire Line
 	6950 3100 7150 3100
 Wire Wire Line
@@ -902,167 +888,11 @@ Wire Wire Line
 Wire Wire Line
 	6950 4200 7150 4200
 Wire Bus Line
-	6850 2900 6850 3000
+	6850 2900 6850 4400
 Wire Bus Line
-	6850 3000 6850 3100
+	5400 6700 11050 6700
 Wire Bus Line
-	6850 3100 6850 3200
-Wire Bus Line
-	6850 3200 6850 3300
-Wire Bus Line
-	6850 3300 6850 3400
-Wire Bus Line
-	6850 3400 6850 3500
-Wire Bus Line
-	6850 3500 6850 3600
-Wire Bus Line
-	6850 3600 6850 3700
-Wire Bus Line
-	6850 3700 6850 3800
-Wire Bus Line
-	6850 3800 6850 3900
-Wire Bus Line
-	6850 3900 6850 4400
-Wire Bus Line
-	5400 6700 7800 6700
-Wire Bus Line
-	7800 6700 7900 6700
-Wire Bus Line
-	7900 6700 9950 6700
-Wire Bus Line
-	9950 6700 10050 6700
-Wire Bus Line
-	10050 6700 11050 6700
-Wire Bus Line
-	5400 1100 5400 1400
-Wire Bus Line
-	5400 1400 5400 1500
-Wire Bus Line
-	5400 1500 5400 1600
-Wire Bus Line
-	5400 1600 5400 1700
-Wire Bus Line
-	5400 1700 5400 1800
-Wire Bus Line
-	5400 1800 5400 1900
-Wire Bus Line
-	5400 1900 5400 2000
-Wire Bus Line
-	5400 2000 5400 2100
-Wire Bus Line
-	5400 2100 5400 2200
-Wire Bus Line
-	5400 2200 5400 2300
-Wire Bus Line
-	5400 2300 5400 2400
-Wire Bus Line
-	5400 2400 5400 2500
-Wire Bus Line
-	5400 2500 5400 2600
-Wire Bus Line
-	5400 2600 5400 2700
-Wire Bus Line
-	5400 2700 5400 2800
-Wire Bus Line
-	5400 2800 5400 2900
-Wire Bus Line
-	5400 2900 5400 3000
-Wire Bus Line
-	5400 3000 5400 3100
-Wire Bus Line
-	5400 3100 5400 3200
-Wire Bus Line
-	5400 3200 5400 3300
-Wire Bus Line
-	5400 3300 5400 3400
-Wire Bus Line
-	5400 3400 5400 3500
-Wire Bus Line
-	5400 3500 5400 3600
-Wire Bus Line
-	5400 3600 5400 3700
-Wire Bus Line
-	5400 3700 5400 3800
-Wire Bus Line
-	5400 3800 5400 3900
-Wire Bus Line
-	5400 3900 5400 4000
-Wire Bus Line
-	5400 4000 5400 4100
-Wire Bus Line
-	5400 4100 5400 4200
-Wire Bus Line
-	5400 4200 5400 4300
-Wire Bus Line
-	5400 4300 5400 4400
-Wire Bus Line
-	5400 4400 5400 4500
-Wire Bus Line
-	5400 4500 5400 5600
-Wire Bus Line
-	5400 5600 5400 5700
-Wire Bus Line
-	5400 5700 5400 5800
-Wire Bus Line
-	5400 5800 5400 5900
-Wire Bus Line
-	5400 5900 5400 6000
-Wire Bus Line
-	5400 6000 5400 6100
-Wire Bus Line
-	5400 6100 5400 6200
-Wire Bus Line
-	5400 6200 5400 6300
-Wire Bus Line
-	5400 6300 5400 6400
-Wire Bus Line
-	5400 6400 5400 6500
-Wire Bus Line
-	5400 6500 5400 6600
-Wire Bus Line
-	5400 6600 5400 6700
-Wire Bus Line
-	5400 6700 5400 6800
-Wire Bus Line
-	5400 6800 5400 6900
-Wire Bus Line
-	5400 6900 5400 7000
-Wire Bus Line
-	5400 7000 5400 7100
-Wire Bus Line
-	5400 7100 5400 7200
-Wire Bus Line
-	5400 7200 5400 7300
-Wire Bus Line
-	5400 7300 5400 7400
-Wire Bus Line
-	5400 7400 5400 7500
-Wire Bus Line
-	5400 7500 5400 7600
-Wire Bus Line
-	5400 7600 5400 7700
-Wire Bus Line
-	5400 7700 5400 7800
-Wire Bus Line
-	5400 7800 5400 7900
-Wire Bus Line
-	5400 7900 5400 8000
-Wire Bus Line
-	5400 8000 5400 8100
-Wire Bus Line
-	5400 8100 5400 8200
-Wire Bus Line
-	5400 8200 5400 8300
-Wire Bus Line
-	5400 8300 5400 8400
-Wire Bus Line
-	5400 8400 5400 8500
-Wire Bus Line
-	5400 8500 5400 8600
-Wire Bus Line
-	5400 8600 5400 8700
-Wire Bus Line
-	5400 8700 5400 9100
+	5400 1100 5400 9100
 Wire Wire Line
 	5300 1500 5100 1500
 Wire Wire Line
@@ -1192,9 +1022,7 @@ Wire Wire Line
 Wire Wire Line
 	8100 2400 8100 5450
 Wire Wire Line
-	8200 2700 8200 5950
-Wire Wire Line
-	8200 5950 8200 6050
+	8200 2700 8200 6050
 Connection ~ 8200 5950
 Wire Wire Line
 	10050 3650 10100 3650
@@ -1205,9 +1033,7 @@ Wire Wire Line
 Wire Wire Line
 	10200 2400 10200 5450
 Wire Wire Line
-	10300 2600 10300 5950
-Wire Wire Line
-	10300 5950 10300 6050
+	10300 2600 10300 6050
 Wire Wire Line
 	10300 6050 10350 6050
 Wire Wire Line
@@ -1302,11 +1128,7 @@ PP5V
 Wire Wire Line
 	4200 800  4200 1150
 Wire Wire Line
-	1950 800  2700 800 
-Wire Wire Line
-	2700 800  3050 800 
-Wire Wire Line
-	3050 800  4200 800 
+	1950 800  4200 800 
 Text HLabel 1950 800  0    60   Input ~ 0
 PP5V
 Text Label 2700 800  0    60   ~ 0
@@ -1322,17 +1144,11 @@ DATA_IN
 Wire Wire Line
 	3400 1550 1950 1550
 Wire Wire Line
-	1950 1750 2400 1750
+	1950 1750 3400 1750
 Wire Wire Line
-	2400 1750 3400 1750
+	1900 2550 3400 2550
 Wire Wire Line
-	1900 2550 2200 2550
-Wire Wire Line
-	2200 2550 3400 2550
-Wire Wire Line
-	1900 2750 2050 2750
-Wire Wire Line
-	2050 2750 3400 2750
+	1900 2750 3400 2750
 Wire Wire Line
 	3400 3550 2850 3550
 Wire Wire Line
@@ -1483,21 +1299,7 @@ Wire Wire Line
 Wire Wire Line
 	8300 2700 8300 2400
 Wire Wire Line
-	6800 1400 7900 1400
-Wire Wire Line
-	7900 1400 8100 1400
-Wire Wire Line
-	8100 1400 8300 1400
-Wire Wire Line
-	8300 1400 10000 1400
-Wire Wire Line
-	10000 1400 10200 1400
-Wire Wire Line
-	10200 1400 10400 1400
-Wire Wire Line
-	10400 1400 12150 1400
-Wire Wire Line
-	12150 1400 12350 1400
+	6800 1400 12350 1400
 Wire Wire Line
 	8300 1400 8300 2100
 Wire Wire Line

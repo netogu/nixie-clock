@@ -30,6 +30,92 @@ LIBS:contrib
 LIBS:valves
 LIBS:nixie_tubes
 LIBS:nixie_clock
+LIBS:ac-dc
+LIBS:Altera
+LIBS:analog_devices
+LIBS:Battery_Management
+LIBS:bbd
+LIBS:Bosch
+LIBS:brooktre
+LIBS:Connector
+LIBS:dc-dc
+LIBS:Decawave
+LIBS:Diode
+LIBS:Display
+LIBS:driver_gate
+LIBS:DSP_Microchip_DSPIC33
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:Espressif
+LIBS:FPGA_Actel
+LIBS:ftdi
+LIBS:gennum
+LIBS:Graphic
+LIBS:hc11
+LIBS:infineon
+LIBS:intersil
+LIBS:ir
+LIBS:Lattice
+LIBS:LED
+LIBS:LEM
+LIBS:Logic_74xgxx
+LIBS:Logic_74xx
+LIBS:Logic_CMOS_4000
+LIBS:Logic_CMOS_IEEE
+LIBS:logic_programmable
+LIBS:Logic_TTL_IEEE
+LIBS:maxim
+LIBS:MCU_Microchip_PIC10
+LIBS:MCU_Microchip_PIC12
+LIBS:MCU_Microchip_PIC16
+LIBS:MCU_Microchip_PIC18
+LIBS:MCU_Microchip_PIC24
+LIBS:MCU_Microchip_PIC32
+LIBS:MCU_NXP_Kinetis
+LIBS:MCU_NXP_LPC
+LIBS:MCU_NXP_S08
+LIBS:MCU_Parallax
+LIBS:MCU_ST_STM8
+LIBS:MCU_ST_STM32
+LIBS:MCU_Texas_MSP430
+LIBS:Mechanical
+LIBS:modules
+LIBS:Motor
+LIBS:motor_drivers
+LIBS:nordicsemi
+LIBS:nxp
+LIBS:onsemi
+LIBS:Oscillators
+LIBS:Power_Management
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:Relay
+LIBS:RF_Bluetooth
+LIBS:rfcom
+LIBS:RFSolutions
+LIBS:Sensor_Current
+LIBS:Sensor_Humidity
+LIBS:sensors
+LIBS:silabs
+LIBS:supertex
+LIBS:Switch
+LIBS:Transformer
+LIBS:Transistor
+LIBS:triac_thyristor
+LIBS:Valve
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:xilinx-artix7
+LIBS:xilinx-kintex7
+LIBS:xilinx-spartan6
+LIBS:xilinx-virtex5
+LIBS:xilinx-virtex6
+LIBS:xilinx-virtex7
+LIBS:zetex
+LIBS:Zilog
 LIBS:Nixie_Clock-cache
 EELAYER 25 0
 EELAYER END
@@ -146,52 +232,6 @@ F 3 "" H 8800 1650 50  0001 C CNN
 	1    8800 1650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6150 1800 6350 1800
-Wire Wire Line
-	2750 1400 3800 1400
-Wire Wire Line
-	3800 1400 4400 1400
-Wire Wire Line
-	4400 1400 5200 1400
-Wire Wire Line
-	5200 1400 5650 1400
-Wire Wire Line
-	5650 1400 6350 1400
-Wire Wire Line
-	7150 1400 8050 1400
-Wire Wire Line
-	8050 1400 8800 1400
-Wire Wire Line
-	8800 1400 9150 1400
-Wire Wire Line
-	9150 1400 9600 1400
-Wire Wire Line
-	9600 1400 10200 1400
-Wire Wire Line
-	6150 3050 6000 3050
-Wire Wire Line
-	6000 3450 6150 3450
-Wire Wire Line
-	3700 3350 3700 3050
-Wire Wire Line
-	3700 3050 4700 3050
-Wire Wire Line
-	3700 3650 3700 4000
-Wire Wire Line
-	6150 3450 6150 4000
-Wire Wire Line
-	4400 1400 4400 1500
-Connection ~ 4400 1400
-Wire Wire Line
-	4400 1800 4400 1900
-Wire Wire Line
-	8800 1400 8800 1500
-Wire Wire Line
-	9150 1400 9150 1500
-Connection ~ 8800 1400
-Wire Wire Line
-	7150 1800 7150 2250
 $Comp
 L GND #PWR?
 U 1 1 59D1667E
@@ -203,10 +243,6 @@ F 3 "" H 7150 2250 50  0001 C CNN
 	1    7150 2250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8800 1800 8800 2250
-Wire Wire Line
-	9150 1800 9150 2250
 $Comp
 L GND #PWR?
 U 1 1 59D166D7
@@ -241,9 +277,6 @@ F 4 "200V" V 5800 1650 60  0000 C CNN "Voltage"
 	1    5650 1650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5650 1500 5650 1400
-Connection ~ 5650 1400
 $Comp
 L D D?
 U 1 1 59D17A42
@@ -260,15 +293,12 @@ L CP1 C?
 U 1 1 59D17AFB
 P 9600 1650
 F 0 "C?" H 9625 1750 50  0000 L CNN
-F 1 "CP1" H 9625 1550 50  0000 L CNN
+F 1 "150u" H 9625 1550 50  0000 L CNN
 F 2 "" H 9600 1650 50  0001 C CNN
 F 3 "" H 9600 1650 50  0001 C CNN
 	1    9600 1650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9600 1400 9600 1500
-Connection ~ 9150 1400
 $Comp
 L GND #PWR?
 U 1 1 59D17B8C
@@ -280,9 +310,6 @@ F 3 "" H 9600 2250 50  0001 C CNN
 	1    9600 2250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9600 1800 9600 2250
-Connection ~ 9600 1400
 $Comp
 L CNY17-3 U?
 U 1 1 59D1803F
@@ -305,18 +332,6 @@ F 3 "" H 6950 4700 50  0001 C CNN
 	1    6950 4750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7250 4600 6950 4600
-Wire Wire Line
-	6950 4600 6950 4750
-Wire Wire Line
-	4600 4500 7250 4500
-Wire Wire Line
-	4600 3350 4600 4500
-Wire Wire Line
-	4600 4500 4600 4600
-Wire Wire Line
-	4600 3350 4700 3350
 Text HLabel 10200 1400 2    60   Output ~ 0
 PP5V
 $Comp
@@ -330,9 +345,6 @@ F 3 "" H 3800 1650 50  0001 C CNN
 	1    3800 1650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3800 1400 3800 1500
-Connection ~ 3800 1400
 $Comp
 L GNDPWR #PWR?
 U 1 1 59D184DA
@@ -344,8 +356,6 @@ F 3 "" H 3800 1850 50  0001 C CNN
 	1    3800 1900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3800 1800 3800 1900
 $Comp
 L C C?
 U 1 1 59D18A36
@@ -357,7 +367,6 @@ F 3 "" H 4600 4750 50  0001 C CNN
 	1    4600 4750
 	1    0    0    -1  
 $EndComp
-Connection ~ 4600 4500
 $Comp
 L GNDPWR #PWR?
 U 1 1 59D18AC6
@@ -369,8 +378,6 @@ F 3 "" H 4600 4950 50  0001 C CNN
 	1    4600 5000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4600 4900 4600 5000
 Text HLabel 2750 1400 0    60   Input ~ 0
 PPMAINS_DC
 $Comp
@@ -396,19 +403,175 @@ F 4 "200V" V 5350 2000 60  0001 C CNN "Voltage"
 	1    5200 2000
 	1    0    0    -1  
 $EndComp
+$Comp
+L R R?
+U 1 1 59D1A1FE
+P 8050 2650
+F 0 "R?" V 8130 2650 50  0000 C CNN
+F 1 "4.7k" V 7950 2650 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 7980 2650 50  0001 C CNN
+F 3 "" H 8050 2650 50  0001 C CNN
+	1    8050 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A5DABDF
+P 8250 4900
+F 0 "#PWR?" H 8250 4650 50  0001 C CNN
+F 1 "GND" H 8250 4750 50  0000 C CNN
+F 2 "" H 8250 4900 50  0001 C CNN
+F 3 "" H 8250 4900 50  0001 C CNN
+	1    8250 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5A5DAD25
+P 10000 3450
+F 0 "R?" V 10080 3450 50  0000 C CNN
+F 1 "10k'" V 9900 3450 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 9930 3450 50  0001 C CNN
+F 3 "" H 10000 3450 50  0001 C CNN
+	1    10000 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5A5DADD1
+P 10000 4450
+F 0 "R?" V 10080 4450 50  0000 C CNN
+F 1 "10k" V 9900 4450 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 9930 4450 50  0001 C CNN
+F 3 "" H 10000 4450 50  0001 C CNN
+	1    10000 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A5DAF8C
+P 10000 4900
+F 0 "#PWR?" H 10000 4650 50  0001 C CNN
+F 1 "GND" H 10000 4750 50  0000 C CNN
+F 2 "" H 10000 4900 50  0001 C CNN
+F 3 "" H 10000 4900 50  0001 C CNN
+	1    10000 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L TL431D D?
+U 1 1 5A5DB3C0
+P 8550 4100
+F 0 "D?" H 8550 4000 50  0000 C CNN
+F 1 "TL431D" H 8550 3925 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 8550 3850 50  0001 C CIN
+F 3 "" H 8550 4100 50  0001 C CIN
+	1    8550 4100
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5A5DC0C1
+P 8550 3350
+F 0 "R?" V 8630 3350 50  0000 C CNN
+F 1 "4.7k" V 8450 3350 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 8480 3350 50  0001 C CNN
+F 3 "" H 8550 3350 50  0001 C CNN
+	1    8550 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5A5DC1F8
+P 8950 3800
+F 0 "R?" V 9030 3800 50  0000 C CNN
+F 1 "4.7k" V 8850 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 8880 3800 50  0001 C CNN
+F 3 "" H 8950 3800 50  0001 C CNN
+	1    8950 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 5A5DC27E
+P 9350 3800
+F 0 "C?" H 9375 3900 50  0000 L CNN
+F 1 "100nF" H 9375 3700 50  0000 L CNN
+F 2 "" H 9388 3650 50  0001 C CNN
+F 3 "" H 9350 3800 50  0001 C CNN
+	1    9350 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C?
+U 1 1 5A5DC42C
+P 9050 3500
+F 0 "C?" H 9075 3600 50  0000 L CNN
+F 1 "100nF" H 9075 3400 50  0000 L CNN
+F 2 "" H 9088 3350 50  0001 C CNN
+F 3 "" H 9050 3500 50  0001 C CNN
+	1    9050 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6150 1800 6350 1800
+Wire Wire Line
+	2750 1400 6350 1400
+Wire Wire Line
+	6150 3050 6000 3050
+Wire Wire Line
+	6000 3450 6150 3450
+Wire Wire Line
+	3700 3350 3700 3050
+Wire Wire Line
+	3700 3050 4700 3050
+Wire Wire Line
+	3700 3650 3700 4000
+Wire Wire Line
+	6150 3450 6150 4000
+Wire Wire Line
+	4400 1400 4400 1500
+Connection ~ 4400 1400
+Wire Wire Line
+	4400 1800 4400 1900
+Wire Wire Line
+	7150 1800 7150 2250
+Wire Wire Line
+	8800 1800 8800 2250
+Wire Wire Line
+	9150 1800 9150 2250
+Wire Wire Line
+	5650 1500 5650 1400
+Connection ~ 5650 1400
+Wire Wire Line
+	9600 1800 9600 2250
+Wire Wire Line
+	7250 4600 6950 4600
+Wire Wire Line
+	6950 4600 6950 4750
+Wire Wire Line
+	4600 4500 7250 4500
+Wire Wire Line
+	4600 3350 4600 4600
+Wire Wire Line
+	4600 3350 4700 3350
+Wire Wire Line
+	3800 1400 3800 1500
+Connection ~ 3800 1400
+Wire Wire Line
+	3800 1800 3800 1900
+Connection ~ 4600 4500
+Wire Wire Line
+	4600 4900 4600 5000
 Wire Wire Line
 	5650 2700 5650 2750
 Wire Wire Line
 	5650 2750 6150 2750
 Wire Wire Line
-	6150 1800 6150 2750
-Wire Wire Line
-	6150 2750 6150 3050
+	6150 1800 6150 3050
 Connection ~ 6150 2750
 Wire Wire Line
-	5650 1800 5650 2350
-Wire Wire Line
-	5650 2350 5650 2400
+	5650 1800 5650 2400
 Wire Wire Line
 	5200 1400 5200 1500
 Connection ~ 5200 1400
@@ -419,25 +582,66 @@ Wire Wire Line
 Wire Wire Line
 	5200 2350 5650 2350
 Connection ~ 5650 2350
-$Comp
-L R R?
-U 1 1 59D1A1FE
-P 8050 2650
-F 0 "R?" V 8130 2650 50  0000 C CNN
-F 1 "68.1k" V 7950 2650 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 7980 2650 50  0001 C CNN
-F 3 "" H 8050 2650 50  0001 C CNN
-F 4 "200V" V 8200 2650 60  0000 C CNN "Voltage"
-	1    8050 2650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8050 2500 8050 1400
-Connection ~ 8050 1400
 Wire Wire Line
 	8050 2800 8050 4400
 Wire Wire Line
 	8050 4400 7850 4400
 Wire Wire Line
-	7850 4600 8050 4600
+	7850 4600 8250 4600
+Wire Wire Line
+	8250 4600 8250 4900
+Wire Wire Line
+	8550 3500 8550 4000
+Wire Wire Line
+	8550 3200 8550 2850
+Wire Wire Line
+	8550 2850 10000 2850
+Wire Wire Line
+	10000 3600 10000 4300
+Wire Wire Line
+	10000 4600 10000 4900
+Wire Wire Line
+	8650 4100 10000 4100
+Connection ~ 10000 4100
+Wire Wire Line
+	8800 3800 8550 3800
+Connection ~ 8550 3800
+Wire Wire Line
+	8700 3800 8700 3500
+Wire Wire Line
+	8700 3500 8900 3500
+Connection ~ 8700 3800
+Wire Wire Line
+	9100 3800 9200 3800
+Wire Wire Line
+	9500 3800 10000 3800
+Connection ~ 10000 3800
+Wire Wire Line
+	9200 3500 9650 3500
+Wire Wire Line
+	9650 3500 9650 3800
+Connection ~ 9650 3800
+Wire Wire Line
+	8550 3700 8050 3700
+Connection ~ 8050 3700
+Connection ~ 8550 3700
+$Comp
+L GND #PWR?
+U 1 1 5A5DCCB4
+P 8550 4900
+F 0 "#PWR?" H 8550 4650 50  0001 C CNN
+F 1 "GND" H 8550 4750 50  0000 C CNN
+F 2 "" H 8550 4900 50  0001 C CNN
+F 3 "" H 8550 4900 50  0001 C CNN
+	1    8550 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 4200 8550 4900
+Wire Wire Line
+	10000 3300 10000 1400
+Wire Wire Line
+	10000 1400 8050 1400
 $EndSCHEMATC
