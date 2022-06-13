@@ -22,3 +22,6 @@ _autosave-*
 
 #LTSpice Sim outputs
 *.raw
+
+#Jupyter Notebooks
+.ipynb_checkpoints
